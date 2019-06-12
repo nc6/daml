@@ -25,35 +25,22 @@ Scala bindings
 
 - New `--root` command-line option for limiting what templates are selected for codegen.
   See `#1210 <https://github.com/digital-asset/daml/pull/1210>`__.
-Ledger API
-~~~~~~~~~~
-
-- Contract keys are now available for created events from the transaction service.
-  See `#1268 <https://github.com/digital-asset/daml/issues/1268>`__.
-
-Java Bindings
-~~~~~~~~~~~~~
-
-- The addition of contract keys on created events in the Ledger API is reflected in the bindings.
-  See `#1268 <https://github.com/digital-asset/daml/issues/1268>`__.
-
-Java Codegen
-~~~~~~~~~~~~
-
-- Contracts decoded from the transaction service now expose their contract key (if defined).
-  See `#1268 <https://github.com/digital-asset/daml/issues/1268>`__.
 
 Ledger API
 ~~~~~~~~~~
 
 - Contract keys are now available for created events from the transaction service.
   See `#1268 <https://github.com/digital-asset/daml/issues/1268>`__.
+- A new command ``ExerciseByKey`` allows to exercise choices on active contracts referring to them by their key.
+  See `#1366 <https://github.com/digital-asset/daml/issues/1366>`__.
 
 Java Bindings
 ~~~~~~~~~~~~~
 
 - The addition of contract keys on created events in the Ledger API is reflected in the bindings.
   See `#1268 <https://github.com/digital-asset/daml/issues/1268>`__.
+- The addition of the ``ExerciseByKey`` to the Ledger API is reflected in the bindings.
+  See `#1366 <https://github.com/digital-asset/daml/issues/1366>`__.
 
 Java Codegen
 ~~~~~~~~~~~~
